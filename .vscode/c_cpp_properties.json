@@ -1,0 +1,51 @@
+{
+  "env": {
+    "vex_compilerPath": "${config:vexrobotics.vexcode.Cpp.Toolchain.Path}\\clang\\bin\\clang",
+    "vex_sdkPath": "${config:vexrobotics.vexcode.Cpp.Sdk.Home}\\EXP\\EXP_20220726_10_00_00\\vexexp",
+    "vex_gcc": "${vex_sdkPath}/gcc/include/c++/7.3.1",
+    "vex_sdkIncludes": [
+      "${vex_sdkPath}/include/**",
+      "${vex_sdkPath}/gcc/include/**",
+      "${vex_sdkPath}/gcc/include/machine/**",
+      "${vex_sdkPath}/gcc/include/newlib-nano/**",
+      "${vex_sdkPath}/gcc/include/sys/**",
+      "${vex_sdkPath}/clang/8.0.0/include/**",
+      "${vex_gcc}/",
+      "${workspaceFolder}/include/**",
+      "${workspaceFolder}/src/**"
+    ]
+  },
+  "configurations": [
+    {
+      "name": "windows-gcc-x64",
+      "includePath": [
+        "${workspaceFolder}/**"
+      ],
+      "compilerPath": "gcc",
+      "cStandard": "${default}",
+      "cppStandard": "${default}",
+      "intelliSenseMode": "windows-gcc-x64"
+    },
+    {
+      "name": "Mac",
+      "includePath": [
+        "${vex_sdkIncludes}"
+      ],
+      "compilerPath": "${vex_compilerPath}",
+      "cStandard": "gnu99",
+      "cppStandard": "gnu++11",
+      "intelliSenseMode": "macos-clang-x86"
+    },
+    {
+      "name": "Linux",
+      "includePath": [
+        "${vex_sdkIncludes}"
+      ],
+      "compilerPath": "",
+      "cStandard": "gnu99",
+      "cppStandard": "gnu++11",
+      "intelliSenseMode": "linux-clang-x86"
+    }
+  ],
+  "version": 4
+}
