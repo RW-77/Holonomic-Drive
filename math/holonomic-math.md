@@ -22,6 +22,7 @@ $\LARGE P_2(\theta)=\vec{V}_x=\|\vec{V}\|sin{(\theta-\frac{\pi}{2})}$
 The x-drive is then simply our calculations for $P_1$ and $P_2$ rotated by $\frac{\pi}{2}$ radians counterclockwise:
 
 $\LARGE P_1=\vec{V}_x=\|\vec{V}\|sin{(\theta+\frac{\pi}{4})}$
+
 $\LARGE P_2=\vec{V}_y=\|\vec{V}\|sin{(\theta-\frac{\pi}{4})}$
 
 We have successfully allocated power to each set of wheels.
