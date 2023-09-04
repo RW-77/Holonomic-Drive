@@ -7,12 +7,8 @@ For each wheel in the x-drive, two things must be determined:
 The magnitude of the sum of vectors (representing wheels) in *any* direction, $\LARGE \theta$, must be constant.
 
 We must determine a ratio between $\LARGE P_1(\theta)$ and $\LARGE P_2(\theta)$ such that:
-$$
-\LARGE
-\begin{flalign}
-\|P_1(\theta)+P_2(\theta)\|=1&&
-\end{flalign}
-$$
+$\LARGE \|P_1(\theta)+P_2(\theta)\|=1$
+
 We can rotate this system so that $P_1$ and $P_2$ are horizontal and vertical vectors
 Given a certain direction vector $\vec{V}$ of magnitude 1 at angle $\theta$ from the horizontal, it's horizontal and vertical components will be $P_1$ and $P_2$
 
