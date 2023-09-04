@@ -4,6 +4,8 @@ For each wheel in the x-drive, two things must be determined:
 1. Power supplied to each wheel
 2. Direction of each wheel
 
+## Calculating Power
+
 The magnitude of the sum of vectors (representing wheels) in *any* direction, $\LARGE \theta$, must be constant.
 
 We must determine a ratio between $\LARGE P_1(\theta)$ and $\LARGE P_2(\theta)$ such that:
@@ -26,6 +28,8 @@ $\LARGE P_1=\vec{V}_x=\|\vec{V}\|sin{(\theta+\frac{\pi}{4})}$
 $\LARGE P_2=\vec{V}_y=\|\vec{V}\|sin{(\theta-\frac{\pi}{4})}$
 
 We have successfully allocated power to each set of wheels.
+
+## Calculating Direction
 
 $P_1$ and $P_2$ have two possible directions. We can take a dot product of the direction vector $\vec{V}$ and $P_1$ and $P_2$. The direction is simply the sign of the dot product.
 
